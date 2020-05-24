@@ -4,6 +4,34 @@ import SEO from "../components/seo"
 import Img from "gatsby-image"
 import { graphql } from "gatsby"
 import styled from "styled-components"
+import githubLogo from "../images/github.svg"
+import telegramLogo from "../images/telegram.svg"
+import twitterLogo from "../images/twitter.svg"
+import SocialLink from "../components/socialLink"
+
+const SocialLinks = [
+  {
+    url: "https://github.com/ildarik",
+    logo: githubLogo,
+    name: "github",
+  },
+  {
+    url: "https://twitter.com/ildar_nogmanov",
+    logo: twitterLogo,
+    name: "twitter",
+  },
+  {
+    url: "http://t.me/nogmanov",
+    logo: telegramLogo,
+    name: "telegram",
+  },
+]
+
+const SocialLinksWrapper = styled.div`
+  margin-top: 36px;
+  display: flex;
+  justify-content: space-around;
+`
 
 const ImgContainer = styled.div`
   width: 200px;
@@ -25,7 +53,17 @@ const IndexPage = ({ data }) => (
       ></Img>
     </ImgContainer>
 
-    <h1 style= {{textAlign: "center"}}>Ildar Nogmanov</h1>
+    <h1 style={{ textAlign: "center" }}>Ildar Nogmanov</h1>
+
+    <SocialLinksWrapper>
+      {SocialLinks.map(socialLink => (
+        <SocialLink
+          url={socialLink.url}
+          logo={socialLink.logo}
+          socialName={socialLink.name}
+        />
+      ))}
+    </SocialLinksWrapper>
   </Layout>
 )
 
