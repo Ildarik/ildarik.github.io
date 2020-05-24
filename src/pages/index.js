@@ -6,19 +6,26 @@ import { graphql } from "gatsby"
 import styled from "styled-components"
 
 const ImgContainer = styled.div`
+  width: 200px;
+  margin: 0 auto;
+  margin-bottom: 14px;
+
   @media (min-width: 576px) {
-    width: 400px;
+    width: 300px;
   }
 `
 
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hello!</h1>
-    <p>I am a web developer.</p>
     <ImgContainer>
-      <Img fluid={data.file.childImageSharp.fluid}></Img>
+      <Img
+        style={{ borderRadius: "50%" }}
+        fluid={data.file.childImageSharp.fluid}
+      ></Img>
     </ImgContainer>
+
+    <h1 style= {{textAlign: "center"}}>Ildar Nogmanov</h1>
   </Layout>
 )
 
@@ -28,7 +35,7 @@ export const query = graphql`
       childImageSharp {
         # Specify the image processing specifications right in the query.
         # Makes it trivial to update as your page's design changes.
-        fluid(maxWidth: 460, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }

@@ -18,6 +18,7 @@ const Layout = ({ children }) => {
           maxWidth: 960,
           padding: `5rem 1.0875rem 1.45rem`,
           paddingTop: 0,
+          marginTop: 50
         }}
       >
         <main>{children}</main>
