@@ -7,6 +7,7 @@ import styled from "styled-components"
 import githubLogo from "../images/github.svg"
 import telegramLogo from "../images/telegram.svg"
 import twitterLogo from "../images/twitter.svg"
+import linkedinLogo from "../images/linkedin.svg"
 import SocialLink from "../components/socialLink"
 
 const SocialLinks = [
@@ -24,6 +25,11 @@ const SocialLinks = [
     url: "http://t.me/nogmanov",
     logo: telegramLogo,
     name: "telegram",
+  },
+  {
+    url: "https://www.linkedin.com/in/ildar-nogmanov-69b96014a",
+    logo: linkedinLogo,
+    name: "linkedin",
   },
 ]
 
@@ -58,7 +64,9 @@ const IndexPage = ({ data }) => (
     <p style={{ padding: 5 }}>
       Hello! I&rsquo;m an&nbsp;engineer and lifelong learner currently lived
       near Moscow in Russia. I&rsquo;m working full-time at&nbsp;
-      <a href="https://focus.bi">Focus Technologies</a>{" "}
+      <a href="https://focus.bi" target="_blank" rel="noopener noreferrer">
+        Focus Technologies
+      </a>{" "}
       as&nbsp;a&nbsp;Cash desk solution expert. My&nbsp;main expertise
       is&nbsp;JavaScript development, frontend in&nbsp;React, and backend
       in&nbsp;node.js. In&nbsp;my&nbsp;free time, I&nbsp;play with kids,
