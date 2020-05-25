@@ -57,7 +57,8 @@ const IndexPage = ({ data }) => (
 
     <p style={{ padding: 5 }}>
       Hello! I&rsquo;m an&nbsp;engineer and lifelong learner currently lived
-      near Moscow in Russia. I&rsquo;m working full-time at&nbsp;focus.bi
+      near Moscow in Russia. I&rsquo;m working full-time at&nbsp;
+      <a href="https://focus.bi">Focus Technologies </a>
       as&nbsp;a&nbsp;Cash desk solution expert. My&nbsp;main expertise
       is&nbsp;JavaScript development, frontend in&nbsp;React, and backend
       in&nbsp;node.js. In&nbsp;my&nbsp;free time, I&nbsp;play with kids,
