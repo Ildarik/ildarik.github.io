@@ -62,7 +62,8 @@ const IndexPage = ({ data }) => (
     <h1 style={{ textAlign: "center" }}>Ildar Nogmanov</h1>
 
     <p style={{ padding: 5 }}>
-      Hello! I&rsquo;m an&nbsp;engineer and lifelong learner currently lived
+      Hello! 
+      I&rsquo;m an&nbsp;engineer and lifelong learner currently lived
       near Moscow in Russia. I&rsquo;m working full-time at&nbsp;
       <a href="https://focus.bi" target="_blank" rel="noopener noreferrer">
         Focus Technologies
@@ -70,7 +71,15 @@ const IndexPage = ({ data }) => (
       as&nbsp;a&nbsp;Cash desk solution expert. My&nbsp;main expertise
       is&nbsp;JavaScript development, frontend in&nbsp;React, and backend
       in&nbsp;node.js. In&nbsp;my&nbsp;free time, I&nbsp;play with kids,
-      do&nbsp;sport and learn something new :)
+      do&nbsp;sport,{" "}
+      <a
+        href="https://t.me/nogmanov_ildar"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        write notes
+      </a>{" "}
+      (in russian &#127479;&#127482;) and learn something new :)
     </p>
 
     <SocialLinksWrapper>
