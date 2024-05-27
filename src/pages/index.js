@@ -64,7 +64,7 @@ const IndexPage = ({ data }) => (
     <p style={{ padding: 5 }}>
       Hello! 
       I&rsquo;m an&nbsp;engineer and lifelong learner currently lived
-      near Moscow in Russia. I&rsquo;m working full-time at&nbsp;
+      in Kazan, Russia. I&rsquo;m working full-time at&nbsp;
       <a href="https://focus.bi" target="_blank" rel="noopener noreferrer">
         Focus Technologies
       </a>{" "}
