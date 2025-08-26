@@ -27,7 +27,7 @@ const SocialLinks = [
     name: "telegram",
   },
   {
-    url: "https://www.linkedin.com/in/ildar-nogmanov-69b96014a",
+    url: "https://www.linkedin.com/in/nogmanov",
     logo: linkedinLogo,
     name: "linkedin",
   },
